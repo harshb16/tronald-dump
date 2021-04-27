@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tronald Dump</title>
+  </head>
+  <body
+    class="flex items-center justify-center h-screen text-center bg-gradient-to-br from-blue-700 via-blue-800 to-gray-900"
+  >
+    <div
+      id="container"
+      class="flex flex-col items-center justify-center w-auto max-w-2xl p-5 mx-4 my-0 space-y-6 text-gray-800 bg-blue-800 border-2 border-gray-700 shadow-2xl rounded-xl"
+    >
+      <div class="text-2xl font-semibold md:text-4xl">
+        <i class="fas fa-quote-left fa-2x"></i>
+        <span id="text"></span>
+      </div>
+      <div class="text-base italic md:text-4xl">
+        Tronald Dump on <span class="underline" id="date"></span>
+      </div>
+      <div class="flex items-center justify-between w-full mx-8 md:text-2xl">
+        <button
+          id="twitter"
+          class="px-3 py-2 font-semibold border-2 border-gray-700 rounded-lg"
+        >
+          <i class="fab fa-twitter"></i>
+        </button>
+        <button
+          id="next"
+          class="px-3 py-2 font-semibold border-2 border-gray-700 rounded-lg"
+        >
+          Next Trumpy Quote
+        </button>
+      </div>
+    </div>
+    <div id="loader">
+      <svg
+        class="w-20 h-20 mr-3 -ml-1 text-gray-800 animate-spin"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <circle
+          class="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          stroke-width="4"
+        ></circle>
+        <path
+          class="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+        ></path>
+      </svg>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
