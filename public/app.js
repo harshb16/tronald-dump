@@ -34,9 +34,7 @@ const getQuote = async () => {
     let linkRegex = /(([a-z]+:\/\/)?(([a-z0-9\-]+\.)+([a-z]{2}|aero|arpa|biz|com|coop|edu|gov|info|int|jobs|mil|museum|name|nato|net|org|pro|travel|local|internal))(:[0-9]{1,5})?(\/[a-z0-9_\-\.~]+)*(\/([a-z0-9_\-\.]*)(\?[a-z0-9+_\-\.%=&amp;]*)?)?(#[a-zA-Z0-9!$&'()*+.=-_~:@/?]*)?)(\s+|$)/gi;
 
     let quoteText = finalQuote.value;
-    console.log(quoteText);
     quoteText = quoteText.replace(linkRegex, '');
-    console.log(finalQuote);
     text.textContent = quoteText;
 
     let dateText = finalQuote.appeared_at.slice(0, 10);
