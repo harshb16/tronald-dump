@@ -13,15 +13,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <title>Tronald Dump</title>
   </head>
   <body
-    class="flex items-center justify-center h-screen text-center bg-gradient-to-br from-blue-700 via-blue-800 to-gray-900"
+    class="flex items-center justify-center h-screen text-center bg-gradient-to-br from-blue-800 via-blue-600 to-blue-900"
   >
     <div
       id="container"
-      class="flex flex-col items-center justify-center w-auto max-w-2xl p-5 mx-4 my-0 space-y-6 text-gray-800 bg-blue-800 border-2 border-gray-700 shadow-2xl rounded-xl"
+      class="flex flex-col items-center justify-center w-auto max-w-2xl p-5 mx-4 my-0 space-y-6 text-gray-900 bg-blue-800 shadow-3xl rounded-xl"
     >
       <div class="text-2xl font-semibold md:text-4xl">
         <i class="fas fa-quote-left fa-2x"></i>
@@ -33,13 +34,13 @@
       <div class="flex items-center justify-between w-full mx-8 md:text-2xl">
         <button
           id="twitter"
-          class="px-3 py-2 font-semibold border-2 border-gray-700 rounded-lg"
+          class="px-3 py-2 font-semibold border-2 border-gray-800 rounded-lg"
         >
           <i class="fab fa-twitter"></i>
         </button>
         <button
           id="next"
-          class="px-3 py-2 font-semibold border-2 border-gray-700 rounded-lg"
+          class="px-3 py-2 font-semibold border-2 border-gray-800 rounded-lg focus:outline-none"
         >
           Next Trumpy Quote
         </button>
@@ -47,7 +48,7 @@
     </div>
     <div id="loader">
       <svg
-        class="w-20 h-20 mr-3 -ml-1 text-gray-800 animate-spin"
+        class="w-20 h-20 mr-3 -ml-1 text-gray-900 animate-spin"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"

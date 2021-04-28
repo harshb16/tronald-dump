@@ -16,8 +16,7 @@ const complete = () => {
 };
 
 const tweetQuote = () => {
-  const twitterUrl = `https://twitter.com/intent/tweet?text=${text.textContent}
-  - Tronald Dump`;
+  const twitterUrl = `https://twitter.com/intent/tweet?text=${text.textContent}%0D%0A- Tronald Dump`;
   window.open(twitterUrl, '_blank');
 };
 
